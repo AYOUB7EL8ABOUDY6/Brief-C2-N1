@@ -1,0 +1,155 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(./Image/bg-pattern-bottom-desktop.svg);
+    width: 95%;
+    margin: 20px auto;
+    max-width: 1440px;
+    Font size: 15px;
+}
+h1 {
+    color: hsl(300, 43%, 22%);
+    font-size: 40px;
+    text-align: start;
+}
+.flexbox1{
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    align-items: center; 
+    align-content: center;
+    background-image: url(./Image/bg-pattern-bottom-desktop.svg);
+    background-size: 30%;
+    background-repeat: no-repeat;
+   
+    
+}
+.p{
+    color: hsl(303, 10%, 53%) ;
+    width: 500px;
+    height: 300px;
+    text-align: center;
+    padding: 20px;
+}
+div{
+    padding: 10px;
+}
+.div{
+    width: 520px;
+    display: grid;
+   grid-template-columns: 1fr  10px 1fr;
+    grid-template-areas: 
+    "one one . . "  " . . tree tree ";
+    
+}
+.one{
+    grid-area: one;
+}
+.two{
+    grid-area: two;
+}
+.tree{
+    grid-area: tree;
+}
+h5{
+    /* text-align: center; */
+    margin-right: 30px;
+    
+}
+.star{
+    background-color: hsl(300, 24%, 96%);
+    display: grid;
+    grid-template-columns:120px 250px;
+    grid-template-rows: 20px;
+    margin: 5px auto;
+    
+}
+
+.flexbox2{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    align-items: center; 
+    align-content: center;
+    background-image: url(./bg-pattern-bottom-desktop);
+    background-size: 50%;
+    background-repeat: no-repeat;
+}
+.bottom{
+    background-color: hsl(300, 43%, 22%);
+    width: 458px;
+    height: 277px;
+    margin: 8px auto;
+    border-radius: 9px;
+    color: hsl(0, 0%, 100%);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.img{
+    border-radius: 100%;
+    margin-top: 5%;
+    margin-left: 7%;
+    height: 50px;
+
+}
+.ver{
+    color: hsl(333, 80%, 67%);
+    position: relative;
+    left: 25%;
+    bottom: 87px;
+}
+.nom{
+    position: relative;
+    left: 25%;
+    bottom: 70px;
+}
+#irenne{
+    position: relative;
+    top: 20px;
+}
+#anne{
+    position: relative;
+    top: 40px;
+}
+h6{
+    margin: auto;
+    text-align: center;
+    font-size: 15px;
+    position: relative;
+    bottom: 50px;
+}
+@media (max-width:375px){
+    .div{
+        grid-template-columns: 1fr ;
+        grid-template-areas: 
+        "one " "two" " tree";
+    }
+   .star{
+       width: 370px;
+       height: 70px;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+
+   }
+   h1{
+       width: 370px;
+       
+   }
+   h5{
+       text-align: center;
+       width: 370px;
+
+   }
+        
+   img.mob{
+    position: relative;
+    top: 30px;
+}
+     
+    
+    
+}
